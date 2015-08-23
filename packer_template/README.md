@@ -3,12 +3,10 @@
 ## Create image
 
 ```bash
-read -p 'Enter password: ' -s password
-packer build -var 'user=ubuntu' -var "password=$password" ubuntu-14.04-server-amd64.json
+packer build ubuntu-14.04-server-amd64-vagrant.json
 ```
 
 ## Software pre-installed
-
 Look in scripts/packages.sh
 
 
